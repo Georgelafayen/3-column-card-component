@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend Deca", "sans serif";
+
+}
+
+main{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card{
+    max-width: 204px;
+    padding: 32px;
+}
+
+.left{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.center{
+    background-color: hsl(184, 100%, 22%); 
+}
+
+.right{
+    background-color: hsl(179, 100%, 13%);
+}
+
+img{
+    max-width: 43px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-family: "Big Shoulders Display";
+    font-size: 26px;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 18px
+}
+
+p{
+    color: hsl(0, 0%, 100%, 0.75);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 52px;
+}
+
+button{
+    font-size: 10px;
+    font-family: "Lexend Deca";
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 150px;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.left button{
+    color: hsl(31, 77%, 52%);
+}
+
+.left button:active{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    border: 2px hsl(0, 0%, 95%) solid ;
+}
+
+.center button{
+    color: hsl(184, 100%, 22%);
+}
+
+.center button:active{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    border: 2px hsl(0, 0%, 95%) solid ;
+}
+
+.right button{
+    color: hsl(179, 100%, 13%);
+}
+
+.right button:active{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    border: 2px hsl(0, 0%, 95%) solid ;
+}
+
+@media (width <= 375px){
+    body{
+        margin: 50px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        max-width: 220px;
+        padding: 32px;
+    }
+
+    p{
+        margin-bottom:20px;
+    }
+}
+
+
+
+
+
