@@ -101,13 +101,11 @@ button{
 }
 
 @media (width <= 375px){
-    body{
-        margin: 50px;
-    }
 
     main{
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
     }
 
     .card{
